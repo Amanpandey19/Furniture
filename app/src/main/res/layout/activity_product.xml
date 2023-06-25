@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#DAD3C8"
+    tools:context=".ProductActivity">
+
+  <androidx.core.widget.NestedScrollView
+      android:layout_width="match_parent"
+      android:background="#DAD3C8"
+      android:layout_alignParentTop="true"
+      android:layout_height="match_parent">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:backgroundTint="#DAD3C8"
+      android:background="#DAD3C8"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="12dp"
+        android:layout_height="wrap_content">
+
+      <ImageView
+          android:layout_width="34dp"
+          android:layout_height="34dp"
+          android:layout_alignParentStart="true"
+          android:layout_centerInParent="true"
+          android:src="@drawable/baseline_arrow_back_24"/>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentEnd="true"
+          android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/share_svgrepo_com"/>
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="18dp"
+            android:src="@drawable/baseline_favorite_border_24"/>
+
+      </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="27dp"
+        android:fontFamily="@font/archivo_black"
+        android:text="Royal Palm Lamp"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="120dp"
+          android:layout_marginHorizontal="12dp"
+          android:src="@drawable/img_5"/>
+
+      <ImageView
+          android:layout_width="277dp"
+          android:layout_height="82dp"
+          android:layout_marginStart="85dp"
+          android:layout_marginEnd="85dp"
+          android:layout_marginTop="210dp"
+          android:src="@drawable/img_8"/>
+
+
+      <ImageView
+          android:layout_width="219dp"
+          android:layout_height="284dp"
+          android:layout_marginHorizontal="90dp"
+          android:src="@drawable/img_7"/>
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="-25dp"
+        android:layout_marginEnd="52dp"
+        android:fontFamily="@font/abhaya_libre_bold"
+        android:text="Royal Palm Sofa, Vissle dark Blue/Kabusa dark Navy"
+        android:textColor="@color/black"
+        android:textSize="20.59dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="27dp"
+        android:layout_marginTop="9dp"
+        android:orientation="horizontal">
+
+      <ImageView
+          android:layout_width="22.88dp"
+          android:layout_height="22.88dp"
+          android:src="@drawable/baseline_star_24"/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="4.58dp"
+          android:fontFamily="@font/poppins"
+          android:text="4.5"
+          android:textColor="#818181"
+          android:textSize="16.02sp" />
+
+      <LinearLayout
+          android:layout_width="1dp"
+          android:layout_marginStart="13.73dp"
+          android:layout_height="match_parent"
+          android:background="#CEBB9E"/>
+
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="355 Reviews"
+          android:fontFamily="@font/poppins"
+          android:layout_marginStart="13.73dp"
+          android:textSize="16.02sp"
+          android:textColor="#818181"/>
+
+
+    </LinearLayout>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="114dp"
+        android:layout_gravity="end"
+        android:layout_height="114dp"
+        android:backgroundTint="@color/black"
+        app:cardCornerRadius="87dp"
+        android:id="@+id/buy_now"
+        app:layout_constraintTop_toTopOf="@id/offer_card"
+        app:layout_constraintRight_toRightOf="@id/offer_card"
+        android:layout_marginEnd="9.6dp"
+        android:clickable="true"
+        android:layout_marginTop="-50dp"
+        android:background="@color/black"
+        android:focusable="true">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Buy Now"
+          android:layout_gravity="center"
+          android:textSize="16sp"
+          android:fontFamily="@font/montserrat_bold"
+          android:textColor="@color/white"/>
+
+    </com.google.android.material.card.MaterialCardView>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="-65dp"
+        android:layout_height="wrap_content">
+
+
+      <com.google.android.material.card.MaterialCardView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:backgroundTint="#E9E5DE"
+          android:background="#E9E5DE"
+          android:id="@+id/offer_card"
+          app:cardBackgroundColor="#E9E5DE"
+          app:cardCornerRadius="18.3dp"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:cardUseCompatPadding="true"
+          android:layout_marginBottom="2dp"
+          android:layout_marginHorizontal="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="22dp"
+              android:textColor="@color/black"
+              android:textSize="20.59dp"
+              android:fontFamily="@font/poppins"
+              android:textStyle="bold"
+              android:layout_marginStart="22dp"
+              android:text="Offers"/>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_marginStart="22dp"
+              android:layout_marginEnd="22dp"
+              android:layout_marginTop="4.59dp"
+              android:layout_height="1dp"
+              android:background="#CEBB9E"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="19.59dp"
+              android:layout_marginTop="10.59dp"
+              android:textColor="@color/black"
+              android:textSize="16.02dp"
+              android:fontFamily="@font/poppins"
+              android:textStyle="bold"
+              android:layout_marginStart="22dp"
+              android:text="CitiBank Offer"/>
+
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="22dp"
+              android:layout_marginTop="3.87dp"
+              android:fontFamily="@font/poppins"
+              android:text="Get additional 15% instant discount upto $10 maximum on selected products"
+              android:textColor="#818181"
+              android:textSize="16.02sp"
+              android:layout_marginBottom="10dp"
+              android:textStyle="normal" />
+
+
+        </LinearLayout>
+      </com.google.android.material.card.MaterialCardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+  </LinearLayout>
+
+
+  </androidx.core.widget.NestedScrollView>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:background="#33FFFFFF"
+      android:orientation="horizontal">
+
+
+
+    <ImageButton
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginVertical="28dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/shopping_cart_fill0_wght400_grad0_opsz48" />
+
+
+    <TextView
+        android:id="@+id/product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="27dp"
+        android:fontFamily="@font/epilogue_extrabold"
+        android:text="$ 15.18"
+        android:textColor="@color/brown"
+        android:textSize="28sp" />
+  </LinearLayout>
+
+</RelativeLayout>

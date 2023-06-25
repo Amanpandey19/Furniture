@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="270dp"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="18.3dp"
+    android:background="#E9E5DE"
+    android:layout_marginBottom="2dp"
+    android:layout_marginStart="1dp"
+    android:layout_marginEnd="20dp"
+    app:cardUseCompatPadding="true"
+    android:id="@+id/arrival_card"
+    android:backgroundTint="#E9E5DE"
+    app:cardBackgroundColor="#E9E5DE"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:background="#E9E5DE"
+            android:backgroundTint="#E9E5DE"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/product_image"
+                android:layout_width="170dp"
+                android:layout_height="180dp"
+                android:layout_marginStart="53dp"
+                android:layout_marginEnd="53dp"
+                android:background="@android:color/transparent"
+                android:backgroundTint="@android:color/transparent"
+                android:layout_marginTop="27dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:src="@drawable/img_4"/>
+
+            <CheckBox
+                android:id="@+id/fav_icon_cart"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_margin="14dp"
+                android:checked="false"
+                android:layout_marginEnd="10dp"
+                android:clickable="true"
+                android:background="@drawable/wishlist_background"
+                android:backgroundTint="#62442B"
+                android:button="@drawable/wishlist_item_selector"
+                app:useMaterialThemeColors="false"
+                android:focusable="true" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:maxHeight="0dp"
+                android:layout_marginHorizontal="22dp"
+                android:fontFamily="@font/poppins"
+                android:text="Leatherette Sofa"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="22dp"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/epilogue_extrabold"
+                android:text="$ 15.18"
+                android:textColor="@color/brown"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/product_name" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
