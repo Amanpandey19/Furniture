@@ -13,8 +13,8 @@
 ## Techniques
 RecycleView, ToolBar, CardView, ListView, NestedScroll, DrawerLayout, Floating Action Button, Fragments etc.
 
-## Develeped By
-* Auther : Aman Pandey
+## Developed By
+* Author : Aman Pandey
 * Email  : amanpandey12398@gmail.com
 
 Here are some screenshots of app
